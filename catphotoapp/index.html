@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <title>CatPhotoApp</title>
+  </head>
   <body>
     <h1>CatPhotoApp</h1>
     <main>
@@ -20,9 +23,46 @@
         <figure>
           <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
 
-            <figcaption>Cats love lasagna.</figcaption>
+            <figcaption>Cats <em>love</em> lasagna.</figcaption>
+        </figure>
+        <h3>Top 3 things cats hate:</h3>
+        <ol>
+            <li>flea treatment</li>
+            <li>thunder</li>
+            <li>other cats</li>
+          </ol>
+
+        <figure>
+            <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field"/>
+            <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
         </figure>
     </section>
+
+    <!-- second section-->
+    
+    <section>
+        <h2>Cat Form</h2>
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+          <fieldset>
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+            <label><input type="radio" id="indoor" name="indoor-outdoor" value="indoor"> Indoor</label>
+            <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+            <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+            <button type="submit">Submit</button>
+          </fieldset>  
+          <fieldset>
+            <legend>What's your Cat's personality?</legend>
+            <input type="checkbox" id="loving" value="loving" name="personality"><label for ="loving">Loving.</label>
+            <input type="checkbox" id="lazy" value="lazy" name="personality"><label for="lazy">Lazy</label>
+            <input type="checkbox" id="energetic" value="energetic" name="personality"><label for="energetic">Energetic</label>
+
+          </fieldset>  
+        </form>
+    </section>
     </main>
+
+    <footer>
+      <p> No Copyright -<a href="https://www.freecodecamp.org."> freeCodeCamp.org </a></p>
+    </footer>
     </body>
 </html>
